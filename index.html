@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior ou menor de idade</title>
+    <style>
+        body{
+            background-color: #ADD8E6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificação de idades</h1>
+    <div>
+        <form action="codigophp.php" method="post">
+            <label>Quantos maiores de idade</label><input type="radio" name="idade" value="maiordeidade">
+            <label>Quantos menor de idade</label><input type="radio" name="idade" value="menordeidade">
+            <label>Quantos maiores e menor de idade</label><input type="radio" name="idade" value="maioremenordeidade" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

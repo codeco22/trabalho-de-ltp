@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maior ou menor de idade</title>
-    <style>
-        body{
-            background-color: #D7D9D7;
-        }
-    </style>
+    <title>Maior ou Menor de Idade</title>
+    <link rel="stylesheet" href="estilização.css">
 </head>
 <body>
-    <h1>Verificação de idades</h1>
-    <div>
+    <div class="container">
+        <h1>Verificação de Idades</h1>
         <form action="codigophp.php" method="post">
-            <label>Quantos maiores de idade</label><input type="radio" name="idade" value="maiordeidade">
-            <label>Quantos menor de idade</label><input type="radio" name="idade" value="menordeidade">
-            <label>Quantos maiores e menor de idade</label><input type="radio" name="idade" value="maioremenordeidade" required>
-            <input type="submit" value="Enviar">
+           <div class="opcoes">
+            <input type="radio" class="marcador" name="idade" value="maiordeidade" required>Quantos maiores de idade<br>
+            <input type="radio" name="idade" value="menordeidade">  Quantos menores de idade<br>
+            <input type="radio" name="idade" value="maioremenordeidade">  Quantos maiores e menores de idade<br>
+        </div>
+            <input type="submit" class="enviar" value="Enviar">
         </form>
     </div>
 </body>
